@@ -1,42 +1,68 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  
+}
+
+.input-container input,
+.input-container select {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #f1eeee;
+  border-radius: 5px;
+  width: 100%; /* Make input fields and select box full width */
+}
+
+.input-container button {
+  padding: 10px 20px;
+  background-color: #00ff22;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-container button:hover {
+  background-color: #046c23;
+}
+
+/* Additional CSS for body background */
+body {
+  background: linear-gradient(135deg, #FFC0CB, #f23708);
+  margin: 0;
+  padding: 0;
+  
+  font-family: Arial, sans-serif;
+}
+/* styles.css */
+.card {
+  background-color: #ffffff; /* White background */
+  border: none; /* No border */
+}
+
+.card-title {
+  font-size: 1.25rem; /* Larger title font size */
+}
+
+.card-text {
+  font-size: 1rem; /* Normal text font size */
+}
+
+/* Shadow color set to blue */
+.shadow-lg {
+  box-shadow: 0 0.25rem 0.5rem rgba(18, 18, 207, 0.15) !important;
+}
+
+/* Center align text in card body */
+.card-body {
+  text-align: center;
+}
+.form-container {
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.form-container input {
+  margin-right: 10px;
 }
